@@ -1,0 +1,33 @@
+.container {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.mycontainer {
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    padding: 15px;
+}
+
+.contact-Container {
+    background-color: #353956;
+    align-items: center;
+    color:#e8e8e8
+}
+
+.contactus-Container {
+    text-decoration: solid;
+    text-decoration-color: brown;
+}
+
+.col-md-3 {
+    font-weight: bold;
+}
+.head {
+    color: #54668E;
+    background-color: #f8f9fa;
+    padding: 10px;
+    
+}

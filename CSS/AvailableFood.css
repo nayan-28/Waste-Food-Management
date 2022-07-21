@@ -1,0 +1,21 @@
+.availfood-container {
+    align-content: center;
+}
+
+body{
+    background-color: #F5F6E6;
+}
+
+.title {
+    background-color: #363956;
+    color: #e8e8e8;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.middle1 {
+    margin-top : 10%;
+    margin-bottom : 10%;
+
+}

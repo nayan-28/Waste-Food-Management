@@ -1,0 +1,23 @@
+:root{
+    --light-color: #ffffff;
+    --dark-color: #000000;
+}
+.dark-theme{
+    --light-color: #ffffff;
+    --dark-color: #000000;
+}
+.bi-x-circle-fill{
+    font-size: 25px;
+}
+.bi-x-circle-fill:hover{
+    color: red;
+}
+.bi-plus-circle{
+    font-size: 27px;
+}
+.bi-plus-circle:hover{
+    color: green;
+}
+.bi-trash{
+    font-size: 17px;
+}

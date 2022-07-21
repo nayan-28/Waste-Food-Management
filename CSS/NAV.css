@@ -1,0 +1,37 @@
+.container {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.mycontainer {
+    margin-bottom: 15px;
+}
+
+.mynav {
+    background-color: #54668E;
+    font-weight:bolder;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.itempad {
+    padding: 4px 8px;
+}
+
+.container-fluid {
+    padding: 15px;
+}
+
+div ul li:hover {
+    background-color:#dddddd;
+}
+
+.col-md-3 {
+    font-weight: bold;
+}
+
+.heading {
+    color: #f8f9fa;
+    background-color: #54668E;
+    padding: 10px;
+}

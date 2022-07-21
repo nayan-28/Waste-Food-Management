@@ -1,0 +1,45 @@
+
+.container {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.mycontainer {
+    margin-bottom: 15px;
+
+}
+.container-fluid {
+    padding: 15px;
+
+}
+
+.about-container {
+    background-color: rgb(86, 121, 109);
+    align-items: center;
+    text-align: justify;
+}
+
+.contact-container {
+    background-color: azure;
+    align-items: center;
+}
+
+.contactus-container {
+    text-decoration: solid;
+    text-decoration-color: brown;
+}
+
+
+
+.col-md-3 {
+    font-weight: bold;
+}
+
+.heading {
+    color: #f8f9fa;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+
+

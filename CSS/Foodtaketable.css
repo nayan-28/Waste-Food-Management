@@ -1,0 +1,34 @@
+table {
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #353956;
+    color: beige;
+  }
+  .tbback {
+    background-color:#e8e8e8;
+  }
+  .thback {
+    background: color #ccccd1;;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+  .color {
+    text-decoration: none;
+    color: red;
+  }
+.decoration {
+  text-decoration: none;
+  color: white;
+}

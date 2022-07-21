@@ -1,0 +1,29 @@
+.container-fluid {
+    padding: 15px;
+}
+
+.about-container {
+    background-color: #f0f6fc;
+    align-items: center;
+    text-align: justify;
+}
+.container {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.mycontainer {
+    margin-bottom: 15px;
+}
+.title {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ color: darkblue;
+ padding: 20px;
+}
+
+.head {
+    text-align: center;
+    text-decoration-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

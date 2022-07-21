@@ -1,0 +1,60 @@
+.container {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.mycontainer {
+    margin-bottom: 15px;
+}
+
+.mynav {
+    background-color: #54668E;
+}
+
+.textbar {
+  background-color: #C1EAFD;
+  color:black;
+  font-family: sans-serif;
+  padding: 15px;
+  font-style: italic;
+
+}
+
+.container-fluid {
+    padding: 15px;
+}
+
+.contact-Container {
+    background-color: #e8e8e8;
+    align-items: center;
+}
+
+.contactus-Container {
+    text-decoration: solid;
+    text-decoration-color: brown;
+}
+
+div ul li:hover {
+    background-color: #e8e8e8;
+}
+
+.col-md-3 {
+    font-weight: bold;
+}
+
+.center{
+    padding: 40px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.donor-heading {
+    text-align: center;
+    background-color: rgb(70, 70, 68);
+    color: white;
+    margin-bottom: 15px;
+    padding: 3px;
+}
+.col-middle{
+    padding: 20px;
+}
