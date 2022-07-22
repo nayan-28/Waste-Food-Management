@@ -32,10 +32,10 @@
         $res =  $db->query($sql);
         $row = $res->fetch_assoc();
         $recommending_officer_id = $row['recommending_officer_id'];
-        $sql3 = "SELECT * FROM tabel_user WHERE id = $recommending_officer_id LIMIT 1";
+        $sql3 = "SELECT * FROM tabel_user WHERE id = $id ";
         $res3 = $db->query($sql3);
         $row3 = $res3->fetch_assoc();
-        //$recommending_officer_name = $row3['name'];
+        $recommending_officer_name = $row3['name'];
     }
             
 ?>
@@ -82,9 +82,11 @@
     <meta charset="UTF-8">
     <title>Details</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
+<div class="bg">
     <?php
         include 'navbar.php';
     ?>
@@ -118,15 +120,15 @@
 
                         if($row['status'] == 'accepted')
                         {
-                            $status = '<font class="text-success"> Approved </font>';
+                            $status = '<font class="text-success"><b>Approved</b></font>';
                         }
                         else if($row['status'] == 'rejected')
                         {
-                            $status = '<font class="text-danger"> Rejected </font>';
+                            $status = '<font class="text-danger"><b>Rejected</b></font>';
                         }
                         else
                         {
-                            $status = '<font class="text-info"> Proccessing </font>';
+                            $status = '<font class="text-Dark"><b>Proccessing</b></font>';
                         }
     
 
@@ -202,9 +204,14 @@
                     <label class="form-check-label" for="no">REJECT</label>
                 </div>
             </div>
-            <div style="max-width: 500px; float:left" class="mt-5 form-control">
+            <div style="max-width: aouto;" class="mt-5 form-control">
                 <label for="signature" class="form-label"><b>VOLUNTEER</b></label>
                 <br>
+                <div class="h4">
+                    <?php
+                        echo $recommending_officer_name;
+                    ?>
+                </div>
                 <div class="mt-2">
                     <select name="day">
                         <option class="dropdown-menu" value="<?php echo $date = date("d"); ?>"> <?php echo $date = date("d"); ?></option>
@@ -275,7 +282,7 @@
                     </select>
                 </div>
             </div>
-            <div style="max-width: 400px; margin-left: 800px" class="mt-5 form-control">
+            <div style="max-width: auro;" class="mt-5 form-control">
                 <b>Message for Food Team</b><br>
                 <textarea class="form-control" name="comment" cols="60" rows="3" placeholder="Write..." required></textarea>
             </div>
@@ -285,6 +292,7 @@
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<?php include 'footer.php' ?>
+    <?php include 'footer.php' ?>
+</div>
 </body>
 </html>

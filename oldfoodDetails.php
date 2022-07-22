@@ -51,9 +51,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD DONATION LIST</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
+<div class="bg">
     <!-- Navbar Start -->
     <?php
         include 'navbar.php';
@@ -112,15 +114,15 @@
                                 foreach($budgets as $budget) :
                                     if($budget['status'] == 'accepted')
                                     {
-                                        $currentStatus = '<font class="text-success"> Approved </font>';
+                                        $currentStatus = '<font class="text-success"><b>Approved</b></font>';
                                     }
                                     else if($budget['status'] == 'rejected')
                                     {
-                                        $currentStatus = '<font class="text-danger"> Rejected </font>';
+                                        $currentStatus = '<font class="text-danger"><b>Rejected</b></font>';
                                     }
                                     else
                                     {
-                                        $currentStatus = '<font class="text-info"> Proccessing </font>';
+                                        $currentStatus = '<font class="text-warning"><b>Proccessing</b></font>';
                                     } ?>
                                 <tr>
                                     <td class="text-center"><?= $count = $count+1; ?></td>
@@ -148,8 +150,9 @@
             </form>
         </div>
     </div>
-<?php include 'footer.php' ?>
+    
+    <?php include 'footer.php' ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+</div>
 </body>
 </html>

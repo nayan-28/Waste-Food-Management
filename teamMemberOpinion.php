@@ -60,6 +60,10 @@
                 $stage = 3;
                 $status = 'accepted';
             }
+            else if($recommend == ''){
+                $stage = 3;
+                $status = 'accepted';
+            }
             $sql = "UPDATE demand SET stage = $stage, status = '$status' WHERE id = '$budget_id'";
             $run = mysqli_query($db, $sql);
 
@@ -80,18 +84,20 @@
     <meta charset="UTF-8">
     <title>DETAILS</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/about.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-<input class="btn btn-primary mb-5" type="button" value="Back" onclick="history.back(-1)" />
-    <div style="margin-top: 20px;" class="container text-center">
-        <h3><strong>FOOD COLLECTION REQUEST</strong></h3>
+<div class="bg">
+    <input class="btn btn-primary mb-5" type="button" value="Back" onclick="history.back(-1)" />
+        <div style="margin-top: 20px;" class="container text-center">
+            <h3><strong>FOOD COLLECTION REQUEST</strong></h3>
         <!-- Budget Statement Start -->
-<div class="text-center container">
-    <div class="container text-center mt-3" style="max-width: 450px; margin: 0, auto">
-        <h4>Details</h4>
-        <form action="" method="post">
-            <table class="table table-striped table-bordered mt-3">
+    <div class="text-center container">
+        <div class="container text-center mt-3" style="max-width: 450px; margin: 0, auto">
+            <h4>Details</h4>
+            <form action="" method="post">
+                <table class="table table-striped table-bordered mt-3">
                 <?php
                 $db = mysqli_connect("localhost","root","","db_lr");
                 $budget_id = mysqli_real_escape_string($db, $_GET['id']);
@@ -112,15 +118,15 @@
 
                         if($row['status'] == 'accepted')
                         {
-                            $status = '<font class="text-success"> Food collecting team shortly reach you.Thanks for your donation </font>';
+                            $status = '<font class="text-success"><b>Food collecting team shortly reach you.Thanks for your donation </b></font>';
                         }
                         else if($row['status'] == 'rejected')
                         {
-                            $status = '<font class="text-danger"> Rejected </font>';
+                            $status = '<font class="text-danger"><b>Rejected</b></font>';
                         }
                         else
                         {
-                            $status = '<font class="text-info"> Proccessing </font>';
+                            $status = '<font class="text-dark"><b>Proccessing</b></font>';
                         }
     
 
@@ -178,15 +184,15 @@
                     echo "0 result";
                 }
                 ?>
-            </table>
-        </form>
-    </div>
-<!-- Budget Statement End -->
-<div>
-<div style="margin-top: 20px;" class="container text-center">
+                </table>
+            </form>
+        </div>
+    <!-- Budget Statement End -->
+    <div>
+    <div style="margin-top: 20px;" class="container text-center">
         <h3><strong>VOLUNTEER OPINION</strong></h3>
-    <table class="table table-striped table-bordered mt-3">
-        <?php
+        <table class="table table-striped table-bordered mt-3">
+            <?php
             $db = mysqli_connect("localhost","root","","db_lr");
             $budget_id = mysqli_real_escape_string($db, $_GET['id']);
             $sql1 = "SELECT * FROM demand WHERE id='$budget_id'";
@@ -243,10 +249,10 @@
             else{
                 echo "0 result";
             }
-        ?>
-    </table>
-</div>
-            <div style="max-width: 500px; float:left" class="mt-5 form-control">
+            ?>
+        </table>
+    </div>
+            <div style="max-width: auto;" class="mt-5 form-control">
                 <label for="signature"><b>TEAM MEMBER</b></label>
                 <div class="h4">
                     <?php
@@ -331,7 +337,7 @@
                     <label class="form-check-label" for="yes" required >COLLECT</label>
                 </div>
             </div>
-            <div style="max-width: 400px; margin-left: 800px" class="mt-5 form-control">
+            <div style="max-width: auto;" class="mt-5 form-control">
                 <b>MESSAGE</b><br>
                 <textarea class="form-control" name="comment" cols="60" rows="3" placeholder="Write..." required></textarea>
             </div>
@@ -342,5 +348,6 @@
     </div>
     <?php include 'footer.php' ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

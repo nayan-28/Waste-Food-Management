@@ -1,50 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("../Img/background-01.jpg");
+.bg {
+    background-image: url("../Img/bg.gif");
+    height: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-fluid {
-    padding: 15px;
-}
-
-.about-container {
-    background-color: #f0f6fc;
-    align-items: center;
-    text-align: justify;
-}
-
-.container {
-    padding: 15px;
-    margin-bottom: 10px;
-}
-
-.mycontainer {
-    margin-bottom: 15px;
-}
-
-.title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: darkblue;
-    padding: 20px;
-}
-
-.head {
-    text-align: center;
-    text-decoration-color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
 }
