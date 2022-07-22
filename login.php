@@ -28,7 +28,9 @@
                     ?>
                     <?php } ?>
                 </ul>
-    <h3 class="display-3 text-center my-5"><b>LOGIN</b></h3>
+                <div class="col-md-4 ,rounded mx-auto d-block">
+                <img src="./Img/login.JPG" class="img-fluid rounded-start p-2">
+                </div>
     <div class="container">
         <div style="max-width: 600px; margin: 0 auto">
         <?php

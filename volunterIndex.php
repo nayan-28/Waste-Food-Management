@@ -58,7 +58,7 @@
         <div class="card mb-3" style="max-width: 700px; margin: 0 auto">
             <div class="row g-0">
                 <div class="col-md-4">
-                <img src="images/man.png" class="img-fluid rounded-start p-2">
+                <img src="./Img/man.png" class="img-fluid rounded-start p-2">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -75,7 +75,7 @@
                         <div styl="max-width: 400px; margin: 0 auto">
                             <div class="btn-group dropend dropdown mb-3">
                                 <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" aria-expanded="false"> 
-                                <b>VOLUNTEER INFORMATION</b>
+                                <b>VOLUNTEER</b>
                                 </button>
                             </div>
                         </div>

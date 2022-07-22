@@ -63,7 +63,7 @@ class user{
             $conn->query($sql);
             $conn->close();
 
-            $mailHtml = "Please confirm your registration by clicking the button bellow : <br><a href='http://localhost/P/verification.php?verification_id=$verification_id'><input name='submit' class='btn btn-primary mt-4' type='submit' value='Verify your account'></a>";
+            $mailHtml = "Please confirm your registration by clicking the button bellow : <br><a href='http://192.168.0.100/P/verification.php?verification_id=$verification_id'><input name='submit' class='btn btn-primary mt-4' type='submit' value='Verify your account'></a>";
             
             if($this->smtp_mailer($email, 'account Verification', $mailHtml) == true)
             {

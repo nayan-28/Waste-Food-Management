@@ -277,7 +277,7 @@
             </div>
             <div style="max-width: 400px; margin-left: 800px" class="mt-5 form-control">
                 <b>Message for Food Team</b><br>
-                <textarea class="form-control" name="comment" cols="60" rows="3" placeholder="Write..."></textarea>
+                <textarea class="form-control" name="comment" cols="60" rows="3" placeholder="Write..." required></textarea>
             </div>
             <div class="text-center m-5">
                 <input class="btn btn-success" name="submit" type="submit" value="Confirm">

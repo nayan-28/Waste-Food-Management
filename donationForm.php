@@ -31,11 +31,11 @@
         <table>
             <tr>
                 <td>Contact Number</td>
-                <td><input class="form-control" type="number" placeholder="Mobile" name="planned_price"></td>
+                <td><input class="form-control" type="number" placeholder="Mobile" name="planned_price" required></td>
             </tr>
             <tr>
                 <td>Address</td>
-                <td><input class="form-control" type="text" placeholder="Address" name="procurement_type"></td>
+                <td><input class="form-control" type="text" placeholder="Address" name="procurement_type" required></td>
             </tr>
             <tr>
                 <td>City</td>
@@ -112,13 +112,13 @@
             <tr>
                 <td>Items</td>
                 <td>
-                    <textarea class="form-control" name="procurement_number" cols="70" rows="4" placeholder="Items....."></textarea>
+                    <textarea class="form-control" name="procurement_number" cols="70" rows="4" placeholder="Items....." required></textarea>
                 </td>
             </tr>
             <tr>
                 <td>Food Details</td>
                 <td>
-                    <textarea class="form-control" name="comment" cols="70" rows="4" placeholder="Items and quality....."></textarea>
+                    <textarea class="form-control" name="comment" cols="70" rows="4" placeholder="Food quality and quantity....." required></textarea>
                 </td>
             </tr>
             

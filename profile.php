@@ -63,6 +63,9 @@
             if ($userdata) {
         ?>
             <form action="" method="POST">
+                <div class="col-md-4">
+                    <img src="./Img/man.png" class="img-fluid rounded-start p-2">
+                </div>
                 <div class="form-group mt-3">
                     <label for="name"><b>FULL NAME</b></label>
                     <input name="name" id="name" class="form-control" value="<?php echo $userdata->name; ?>" type="text" placeholder="Name" <?php if($current_id!=$session_id) echo "readonly";?> >

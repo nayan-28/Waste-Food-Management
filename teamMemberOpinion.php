@@ -60,11 +60,6 @@
                 $stage = 3;
                 $status = 'accepted';
             }
-            else{
-                $stage = 2;
-                $status = 'rejected';
-            }
-
             $sql = "UPDATE demand SET stage = $stage, status = '$status' WHERE id = '$budget_id'";
             $run = mysqli_query($db, $sql);
 
@@ -333,12 +328,12 @@
             <div class="text-center my-4">
                 <div class="btn btn-outline-success">
                     <input class="form-check-input" id="yes" name="recommend" value="yes" type="radio">
-                    <label class="form-check-label" for="yes">COLLECT</label>
+                    <label class="form-check-label" for="yes" required >COLLECT</label>
                 </div>
             </div>
             <div style="max-width: 400px; margin-left: 800px" class="mt-5 form-control">
                 <b>MESSAGE</b><br>
-                <textarea class="form-control" name="comment" cols="60" rows="3" placeholder="Write..."></textarea>
+                <textarea class="form-control" name="comment" cols="60" rows="3" placeholder="Write..." required></textarea>
             </div>
             <div class="text-center m-3">
                 <input class="btn btn-success" name="submit" type="submit" value="Confirm">
